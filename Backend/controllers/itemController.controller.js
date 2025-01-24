@@ -31,6 +31,8 @@ exports.createItem = async (req, res) => {
         }
 
         // Create a new item object
+        const item = new Item(req.body);
+        await item.save();
         const newItem = {
             name,
             image,
@@ -49,7 +51,7 @@ exports.createItem = async (req, res) => {
         // Save the updated category document
         await category.save();
 
-        console.log("Item added to subcategory and category saved:", newItem);
+        // console.log("Item added to subcategory and category saved:", newItem);
 
         // Send the response with the new item
         res.status(201).send(newItem);

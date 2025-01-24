@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-// const itemSchema = require('./item.model');
+
 
 const subCategorySchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -8,7 +8,7 @@ const subCategorySchema = new mongoose.Schema({
   tax: { type: Number },
   taxType: { type: String },
   items: [
-    
+   
   ]  // Items under each subcategory
 });
 
