@@ -36,6 +36,4 @@ PORT=
 MONGO_URI 
 ```
 
-[Watch the demo video](hhttps://www.loom.com/share/7ef88006586443d082675b1b72e599e8?sid=87739dcb-e8b5-4aa1-8411-7318415d1c5d)
-
 
